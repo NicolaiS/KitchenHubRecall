@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.kaist.resl.kitchenhubrecall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name">
+
+        <service
+            android:name=".service.RecallService"
+            android:exported="true" />
+    </application>
+
+</manifest>
